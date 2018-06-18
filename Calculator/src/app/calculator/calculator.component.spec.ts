@@ -1,6 +1,4 @@
-/* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CalculatorComponent } from './calculator.component';
 
 describe('CalculatorComponent', () => {
@@ -19,7 +17,7 @@ describe('CalculatorComponent', () => {
         fixture.detectChanges();
     });
 
-    it('should create', () => {
+    it('should create NAB calculator component', () => {
         expect(component).toBeTruthy();
     });
 
