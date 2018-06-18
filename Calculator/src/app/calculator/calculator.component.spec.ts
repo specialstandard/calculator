@@ -24,12 +24,25 @@ describe('CalculatorComponent', () => {
     describe('onClickNumber()', () => {
         it('should append number clicked to result', () => {
             component.onClickNumber('1');
+
             fixture.detectChanges();
             expect(component.result).toBe('1');
         });
     });
 
-    describe('whole number arithmetic', () => {
+    describe('onClickOperator()', () => {
+        it('should add 1 to result when + operator is pushed after 1', () => {
+            component.total = [1];
+            component.result = '1';
+            component.previousOperator = '+';
+            component.onClickOperator('+');
+
+            fixture.detectChanges();
+            expect(component.result).toBe('2');
+        });
+    });
+
+    describe('onClickEquals() whole number arithmetic', () => {
 
         it('should calculate addition operation', () => {
             component.total[0] = 1;
@@ -72,7 +85,7 @@ describe('CalculatorComponent', () => {
         });
     });
 
-    describe('decimal number arithmetic', () => {
+    describe('onClickEquals() decimal number arithmetic', () => {
 
         it('should calculate addition operation', () => {
             component.total[0] = 1.2;
