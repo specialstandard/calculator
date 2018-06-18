@@ -21,6 +21,14 @@ describe('CalculatorComponent', () => {
         expect(component).toBeTruthy();
     });
 
+    describe('onClickNumber()', () => {
+        it('should append number clicked to result', () => {
+            component.onClickNumber('1');
+            fixture.detectChanges();
+            expect(component.result).toBe('1');
+        });
+    });
+
     describe('whole number arithmetic', () => {
 
         it('should calculate addition operation', () => {
