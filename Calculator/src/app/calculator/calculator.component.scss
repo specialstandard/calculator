@@ -10,13 +10,16 @@ $border-01: 1px solid grey;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 4px;
+    background-color: #AAA;
 
     .screen {
         border: $border-01;
         border-radius: 4px;
+        background-color: #FFF;
         min-height: 50px;
         margin: 0px 4px 20px;
         padding-top: 12px;
+        font-weight: bold;
     }
 
     .buttons {
@@ -25,5 +28,6 @@ $border-01: 1px solid grey;
 
     .btn {
         min-width: 50px;
+        font-weight: bold;
     }
 }

@@ -47,8 +47,8 @@ export class CalculatorComponent implements OnInit {
         this.result = '';
 
         if (this.total.length === 2) {
-            const num1 = Number(this.total[0]);
-            const num2 = Number(this.total[1]);
+            const num1 = this.total[0];
+            const num2 = this.total[1];
             let answer: number;
 
             if (this.previousOperator === '+') {
@@ -75,7 +75,7 @@ export class CalculatorComponent implements OnInit {
 
     public onClickEquals(): void {
 
-        const num1 = Number(this.total[0]);
+        const num1 = this.total[0];
         const num2 = Number(this.result);
         let answer: number;
 
