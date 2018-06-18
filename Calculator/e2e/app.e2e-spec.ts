@@ -112,5 +112,5 @@ describe('calculator App', () => {
 
             expect(page.getResult()).toEqual('3');
         });
-    })
+    });
 });
