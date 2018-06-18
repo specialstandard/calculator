@@ -1,12 +1,7 @@
 # Calculator
 
 # Description
-Given I open the calculator page
-When I enter a number
-And I enter an operation
-And I enter a number
-And I choose to display the answer
-Then The result will be displayed in the browser
+Angular 6 CLI calculator application with SCSS, CI/CD, Bootstrap 4 CSS Only for Grid/Layout, Component/Unit tests, and E2E tests. No jQuery.
 
 ## Development server
 
@@ -19,3 +14,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running e2e tests
+
+Run `ng e2e` to execute the end to end tests via Protractor.
