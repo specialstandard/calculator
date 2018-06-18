@@ -1,0 +1,93 @@
+<div class="nab-calculator">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="screen">
+                    {{screen}}
+                </div>
+            </div>
+        </div>
+        <div class="row buttons">
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('7')">
+                    7
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('8')">
+                    8
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('9')">
+                    9
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('*')">
+                    *
+                </div>
+            </div>
+        </div>
+
+        <div class="row buttons">
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('4')">
+                    4
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('5')">
+                    5
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('6')">
+                    6
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('/')">
+                    /
+                </div>
+            </div>
+        </div>
+
+        <div class="row buttons">
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('1')">
+                    1
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('2')">
+                    2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('3')">
+                    3
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary" (click)="onClickButton('+')">
+                    +
+                </div>
+            </div>
+        </div>
+
+        <div class="row buttons">
+            <div class="offset-3 col-3">
+                <div class="btn btn-primary" (click)="onClickButton('1')">
+                    0
+                </div>
+            </div>
+            <div class="offset-3 col-3">
+                <div class="btn btn-primary" (click)="onClickButton('-')">
+                    -
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

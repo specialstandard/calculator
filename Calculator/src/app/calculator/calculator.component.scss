@@ -1,0 +1,29 @@
+$calculator-width: 320px;
+$shadow-01: 0 2px 4px 0 rgba(51, 51, 51, 0.25);
+$border-01: 1px solid grey;
+
+.nab-calculator {
+    margin: auto;
+    width: $calculator-width;
+    box-shadow: $shadow-01;
+    border: $border-01;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+
+    .screen {
+        border: $border-01;
+        border-radius: 4px;
+        min-height: 50px;
+        margin: 0px 4px 20px;
+        padding-top: 12px;
+    }
+
+    .buttons {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        min-width: 38px;
+    }
+}
